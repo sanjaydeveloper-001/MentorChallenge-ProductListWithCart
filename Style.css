@@ -35,12 +35,16 @@ body{
     width: 140px;
     border-radius: 8px;
 }
-.prod img{
+.prodImg{
     width: 140px;
     height: 130px;
     border-radius: 8px;
     margin-bottom: 10px;
 }
+.prodImg:hover{
+    border: 2px solid hsl(14, 86%, 42%);
+}
+
 .addrelative{
     position: relative;
     bottom: 20px;
@@ -59,11 +63,11 @@ body{
     width: 90px;
     background-color: white;
     border-radius:15px;
-    border: 1px solid hsl(7, 20%, 60%);
+    border: 2px solid hsl(7, 20%, 60%);
     cursor: pointer;
 }
 .addtocart:hover{
-    border: 1px solid hsl(14, 86%, 42%);
+    border: 2px solid hsl(14, 86%, 42%);
     color: hsl(14, 86%, 42%);
 
 }
@@ -302,3 +306,30 @@ body{
 #Ob9{
     display: none;
 }
+
+
+
+
+
+
+
+
+
+/* Media */
+/* 
+@media screen and (max-width:450px) {
+    body{
+        flex-direction:column;
+    }
+    .Prodects{
+        grid-template-columns: 1fr;
+
+    }
+    .cart-controls{
+        position:static;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+} */
