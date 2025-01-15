@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:hsl(20, 50%, 98%);
+    padding-top: 40px;
+    gap: 15px;
+}
+.Productsbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    width: 450px;
+}
+.Dessert{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.Prodects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-gap: 10px;
+
+}
+.prod{
+    height: 190px;
+    width: 140px;
+    border-radius: 8px;
+}
+.prod img{
+    width: 140px;
+    height: 130px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.addrelative{
+    position: relative;
+    bottom: 20px;
+}
+
+/* Add to cart */
+.addtocart{
+    position: relative;
+    bottom: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    height: 25px;
+    left: 25px;
+    width: 90px;
+    background-color: white;
+    border-radius:15px;
+    border: 1px solid hsl(7, 20%, 60%);
+    cursor: pointer;
+}
+.addtocart:hover{
+    border: 1px solid hsl(14, 86%, 42%);
+    color: hsl(14, 86%, 42%);
+
+}
+.addtocart img{
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    margin-right: 5px;
+}
+
+
+.cart-controls{
+    position: relative;
+    bottom: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    height: 25px;
+    left: 25px;
+    width: 90px;
+    background-color: hsl(14, 86%, 42%);
+    border-radius:15px;
+    gap: 22px;
+    display: none;
+}
+.cart-controls span{
+    font-size: 10px;
+    color: white;
+}
+
+.cart-controls button{
+    height: 15px;
+    width: 15px;
+    margin: 0;
+    border: none;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-controls button:hover{
+    background-color: white;
+    color:hsl(14, 86%, 42%) ;
+}
+
+
+/* End of Add to cart */
+
+
+.prod h4{
+    font-size: 8px;
+    color: hsl(7, 20%, 60%);
+    font-weight: 100;
+}
+.prod h2{
+    bottom: 18px;
+    font-size: 9px;
+    font-weight: 600;
+    color: hsl(14, 65%, 9%);
+}
+.span{
+    font-size: 10px;
+    font-weight: 600;
+    color: hsl(14, 86%, 42%);
+}
+
+
+/* Cart */
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    height:max-content;
+  }
+  
+.cart h1{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 15px;
+    color: hsl(14, 86%, 42%);
+}
+.cart-h1-span{
+    font-size: 16px;
+}
+.No-items{
+    margin: 10px 90px;
+    width: 70px;
+}
+.No-items-p{
+    font-size: 9px;
+    color:hsl(12, 20%, 44%) ;
+    font-weight: 500;
+    margin: 0 35px;
+    margin-bottom: 35px;
+}
+
+
+
+
+/* Orders */
+
+.Ordered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.Ordered h3{
+    font-size: 10px;
+    font-weight: 100;
+    margin: 0 20px;
+}
+.Ordered h3 span{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 70px;
+}
+
+
+.carbon-neutral{
+    height: 35px;
+    width: 210px;
+    margin: 10px 5px;
+    background-color:hsl(20, 50%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+.carbon-neutral h2{
+    font-size: 10px;
+    font-weight: 100;
+}
+.carbon-neutral h2 span{
+    font-weight: 600;
+}
+
+.comfirm-order{
+    height: 35px;
+    width: 210px;
+    margin: 10px 5px;
+    background-color: hsl(14, 86%, 42%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+/* Boxes */
+
+
+.Obox{
+    height: 50px;
+    width: 210px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0;
+    gap: 8px;
+    border-bottom: 1px solid hsl(13, 31%, 94%);
+}
+.Obox h1{
+    font-size: 13px;
+    color: hsl(14, 65%, 9%);
+    margin: 0;
+    font-weight: 500;
+}
+.rate{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.no{
+    font-size: 10px ;
+    color:hsl(14, 86%, 42%) ;
+    font-weight: 500;
+}
+.rate h2{
+    font-size: 10px;
+    font-weight: 400;
+    margin-left: 10px;
+    color: hsl(12, 20%, 44%);
+}
+.boxtotal{
+    font-size: 10px;
+    font-weight: 500;
+    color:hsl(14, 65%, 9%);
+
+}
+
+
+
+/* Each one orders */
+
+#Ob1{
+    display: none;
+}
+#Ob2{
+    display: none;
+}
+#Ob3{
+    display: none;
+}
+#Ob4{
+    display: none;
+}
+#Ob5{
+    display: none;
+}
+#Ob6{
+    display: none;
+}
+#Ob7{
+    display: none;
+}
+#Ob8{
+    display: none;
+}
+#Ob9{
+    display: none;
+}
