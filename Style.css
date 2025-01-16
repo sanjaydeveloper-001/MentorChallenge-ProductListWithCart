@@ -228,6 +228,7 @@ body{
     border-radius: 20px;
     color: white;
     font-weight: 500;
+    cursor: pointer;
 }
 
 
@@ -312,24 +313,104 @@ body{
 
 
 
-
-
-
 /* Media */
-/* 
+
 @media screen and (max-width:450px) {
     body{
-        flex-direction:column;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        margin: 0 20px;
+    }
+    .Productsbox{
+        height: 3200px;
+    }
+    .Dessert{
+        font-size: 25px;
+        margin-left: 100px;
     }
     .Prodects{
+        display: grid;
         grid-template-columns: 1fr;
-
+        margin-left: 100px;
+        row-gap: 50px;
+    }
+    .prod{
+        height: 300px;
+        width: 260px;
+    }
+    .prodImg{
+        width: 260px;
+        height: 240px;
+    }
+    .addtocart{
+        height: 35px;
+        width: 130px;
+        border-radius: 20px;
+        left:55px;
+        font-size: 11px;
+    }
+    .addtocart img{
+        width: 17px;
+        height: 17px;
     }
     .cart-controls{
-        position:static;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0;
+        height: 35px;
+        width: 130px;
+        border-radius: 20px;
+        left:55px;
+        font-size: 11px;
+        gap: 30px;
     }
-} */
+    .cart-controls span{
+        font-size: 13px;
+    }
+    .cart-controls button{
+        height: 18px;
+        width: 18px;
+
+    }
+
+    .prod h4{
+        font-size: 13px;
+    }
+    .prod h2{
+        font-size: 14px;
+    }
+    .span{
+        font-size: 16px;
+    }
+
+
+    .cart{
+        width: 260px;
+        margin: 20px auto;
+
+    }
+    .cart h1{
+        font-size: 17px;
+        margin: 0 20px;
+    }
+    .cart-h1-span{
+        font-size: 20px;
+    }
+    .No-items{
+        width: auto;
+        margin: 0 55px;
+    }
+    .No-items-p{
+        font-size: 10px;
+        margin: 0 auto;
+    }
+    .Obox{
+        height: 70px;
+        gap: 15px;
+    }
+    .Obox h1{
+        font-size: 13px;
+    }
+    .rate{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+}
